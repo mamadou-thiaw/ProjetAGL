@@ -15,22 +15,24 @@ public class CalculTest {
 	
    /* TEST ADDITION */
 	
-	 // methode pour un test correct
+	 // test correct
 	@Test
 	public void test1Addition() {
-		assertEquals(4, subject.addition(2, 2));
-	}
+		assertEquals(4.0, subject.addition(2.0, 2.0), 0.1);
+			
+	} 
 	
-	// methode pour un test incorrect
+	//  test incorrect
 	@Test
 	public void test2Addition() {	
-		assertEquals("blablabla", subject.addition(2, 2));	
+		assertEquals(5.0, subject.addition(2.0, 2.0),0.1);	
 	}
 	
-	// methode pour un test incorrect
+	//test incorrect
 	@Test
 	public void test3Addition() {
-		assertEquals(5, subject.addition(2, 2));	
+		assertEquals("blablabla", subject.addition(2.0, 2.0));
+		
 	}	
 	
    /* TEST MULTIPLICATION */
@@ -38,12 +40,12 @@ public class CalculTest {
 		//test correct
 	@Test
 	public void test1Mutiplication() {
-		assertEquals(6, subject.mutiplication(3, 2));
+		assertEquals(6.0, subject.mutiplication(3.0, 2.0),0.01);
 	}
 	//test incorrect 
 	@Test
 		public void test2Mutiplication() {
-			assertEquals(9, subject.mutiplication(3, 2));
+			assertEquals(9.0, subject.mutiplication(3, 2),0.01);
 		}
 
 	//test incorrect 

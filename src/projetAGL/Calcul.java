@@ -1,10 +1,10 @@
 package projetAGL;
 
 public class Calcul {
-	public long addition(int a,int b) {
-		return a+b;
+	public double addition(double d,double e) {
+		return d+e;
 	}
-	public long mutiplication(int a,int b) {
+	public double mutiplication(double a,double b) {
 		return a*b;
 		
 	}
